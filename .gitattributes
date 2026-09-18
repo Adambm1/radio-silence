@@ -1,0 +1,3 @@
+# Store everything with LF whatever the machine publishing it uses, so a
+# checkout on Windows cannot show the whole policy as rewritten.
+* text=auto eol=lf

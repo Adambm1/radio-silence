@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — {{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<style>
+  :root {
+    --void: #05070F;
+    --deep: #0A1020;
+    --nebula: #17203A;
+    --starlight: #E6ECFF;
+    --dust: #6F7C9E;
+    --luminous: #7FD4FF;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--void);
+    color: var(--starlight);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .page { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 5rem; }
+  header.mast {
+    border-bottom: 1px solid var(--nebula);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  header.mast a {
+    color: var(--dust);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  header.mast a:hover { color: var(--luminous); }
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 2.75rem 0 0.85rem;
+    color: var(--luminous);
+  }
+  p, li { color: var(--starlight); }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.6rem; }
+  a { color: var(--luminous); }
+  strong { color: #fff; font-weight: 600; }
+  code {
+    background: var(--deep);
+    border: 1px solid var(--nebula);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+  hr { border: 0; border-top: 1px solid var(--nebula); margin: 3rem 0; }
+  footer.mast {
+    border-top: 1px solid var(--nebula);
+    margin-top: 4rem;
+    padding-top: 1.25rem;
+    color: var(--dust);
+    font-size: 0.85rem;
+  }
+  @media (max-width: 480px) {
+    .page { padding: 2rem 1rem 3rem; }
+    h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="mast"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></header>
+  {{ content }}
+  <footer class="mast">{{ site.title }} — {{ site.description }}</footer>
+</div>
+</body>
+</html>

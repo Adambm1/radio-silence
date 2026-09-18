@@ -1,0 +1,11 @@
+# This repository is published at https://adambm1.github.io/radio-silence/
+# and exists only to give the privacy policy a public URL, which Play requires
+# for the store listing. The game's source lives in a private repository.
+#
+# The policy here is a copy of docs/privacy-policy.md in that repository.
+# Publish changes with tool/publish-site.sh rather than editing this copy.
+title: Radio Silence
+description: A cooperative game about counting upwards in silence.
+lang: en
+url: https://adambm1.github.io
+baseurl: /radio-silence
